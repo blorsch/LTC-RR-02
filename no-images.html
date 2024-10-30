@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Images</title>
+    <style>
+        /* Hide the images */
+        .hidden-images {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hidden Images</h1>
+    <p>Images are being loaded in the background but not displayed.</p>
+
+    <div class="hidden-images">
+        <img src="http://127.0.0.1:5000/image/1.jpg" alt="Hidden Image 1">
+        <img src="http://127.0.0.1:5000/image/2.jpg" alt="Hidden Image 2">
+        <img src="http://127.0.0.1:5000/image/3.jpg" alt="Hidden Image 3">
+        <img src="http://127.0.0.1:5000/image/4.jpg" alt="Hidden Image 4">
+        <img src="http://127.0.0.1:5000/image/5.jpg" alt="Hidden Image 5">
+        <img src="http://127.0.0.1:5000/image/6.jpg" alt="Hidden Image 6">
+        <img src="http://127.0.0.1:5000/image/7.jpg" alt="Hidden Image 7">
+    </div>
+
+    <script>
+        // JavaScript can be used to verify if images are loaded
+        window.addEventListener('load', function() {
+            console.log('All hidden images have been loaded.');
+        });
+    </script>
+</body>
+</html>
